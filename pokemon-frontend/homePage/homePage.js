@@ -12,3 +12,11 @@ function greetingUser(event) {
 
 const number = window.prompt('Hello, how are you? Please insert a random number!');
 window.localStorage.setItem('randomNumber', number);
+
+var counter = 0;
+document.getElementById('count').textContent = counter;
+
+function increment() {
+  counter += 1;
+  document.getElementById('count').value = counter;
+}
